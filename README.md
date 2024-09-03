@@ -6,8 +6,8 @@ Get started now by cloning :)
 ![Add a heading](https://github.com/user-attachments/assets/47c7514e-fb1f-47a6-b071-a8933aaf1930)
 
 
-🧑‍💻 
-## Devfolio
+ 
+## Devfolio 🧑‍💻
 Is a multi-platform portfolio for developers available for mobile, windows and web. Includes the following sections:
 
 Home
