@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_portfolio/view/intro/components/social_media_coloumn.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -13,10 +14,11 @@ class ContactIcon extends StatelessWidget {
       margin: const EdgeInsets.only(top: defaultPadding),
       child: Row(
         children: [
-          const Spacer(),
-          IconButton(onPressed: () {launchUrl(Uri.parse('https://www.linkedin.com/in/rohit-premnarayan-prajapati/'));}, icon: SvgPicture.asset('assets/icons/linkedin.svg')),
-          IconButton(onPressed: () {launchUrl(Uri.parse('https://github.com/rohitprajapati-bit'));}, icon: SvgPicture.asset('assets/icons/github.svg')),
-          const Spacer(),
+          // const Spacer(),
+          // IconButton(onPressed: () {launchUrl(Uri.parse('https://www.linkedin.com/in/rohit-premnarayan-prajapati/'));}, icon: SvgPicture.asset('assets/icons/linkedin.svg')),
+          // IconButton(onPressed: () {launchUrl(Uri.parse('https://github.com/rohitprajapati-bit'));}, icon: SvgPicture.asset('assets/icons/github.svg')),
+          // const Spacer(),
+          SocialMediaIconColumn()
         ],
       ),
     );

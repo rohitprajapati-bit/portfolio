@@ -37,8 +37,8 @@ class SocialMediaIconColumn extends StatelessWidget {
           ),
           SocialMediaIcon(
             icon: 'assets/icons/twitter.svg',
-            // onTap: () =>
-            //     launchUrl(Uri.parse('')),
+            onTap: () =>
+                launchUrl(Uri.parse('https://x.com/Rohit_03_0?t=RuZSQxQak4SL2oB5ycqVHQ&s=09')),
           ),
           SizedBox(
             width: 20,

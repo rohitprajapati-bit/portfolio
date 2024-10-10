@@ -1,20 +1,37 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../res/constants.dart';
 import 'header_info.dart';
 
-class PersonalInfo extends StatelessWidget {
+class PersonalInfo extends StatefulWidget {
   const PersonalInfo({super.key});
 
   @override
+  State<PersonalInfo> createState() => _PersonalInfoState();
+}
+
+class _PersonalInfoState extends State<PersonalInfo> {
+ void _sendEmail() async {
+    final Uri emailLaunchUri =
+        Uri(scheme: 'mailto', path: ' rohitprajapati09190@gmail.com');
+    launchUrl(emailLaunchUri);
+    if (await canLaunchUrl(emailLaunchUri)) {
+      await launchUrl(emailLaunchUri);
+    } else {
+      throw 'Could not launch $emailLaunchUri';
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SizedBox(
+        const SizedBox(
           height: defaultPadding / 2,
         ),
-        AreaInfoText(
+        const AreaInfoText(
           icons: Icon(
             Icons.phone,
             color: Colors.grey,
@@ -22,21 +39,24 @@ class PersonalInfo extends StatelessWidget {
           ),
           text: '+91 9321462658',
         ),
-        AreaInfoText(
-            icons: Icon(
-              Icons.email_rounded,
-              color: Colors.grey,
-              size: 18,
-            ),
-            text: 'rohitprajapati09190@gmail.com'),
-        SizedBox(
+        InkWell(
+          onTap:  _sendEmail,
+          child: const AreaInfoText(
+              icons: Icon(
+                Icons.email_rounded,
+                color: Colors.grey,
+                size: 18,
+              ),
+              text: 'rohitprajapati09190@gmail.com'),
+        ),
+        const SizedBox(
           height: defaultPadding,
         ),
-        Text(
+        const Text(
           'Skills',
           style: TextStyle(color: Colors.white),
         ),
-        SizedBox(
+        const SizedBox(
           height: defaultPadding,
         ),
       ],
