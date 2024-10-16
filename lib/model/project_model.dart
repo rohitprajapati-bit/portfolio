@@ -17,17 +17,18 @@ List<Project> projectList = [
     'E-Commerce-Application',
     'A Flutter-based e-commerce application that uses REST API for user authentication, displaying products, product details, and adding items to the cart. The app is designed for selling tech products like laptops and phones, providing a smooth and responsive user experience.',
     // 'assets/images/coffee.png',
-    'https://github.com/rohitprajapati-bit/TechStore-App',
+    'https://github.com/rohitprajapati-bit/ShopHub-E-Commerce-Application-',
   ), Project(
     'Chat App',
     'A Flutter-based chat application that enables real-time messaging and user authentication using Firebase. This app allows users to chat securely, authenticate using email and password, and store messages in Firebase Firestore.',
     // 'assets/images/coffee.png',
-    'https://github.com/rohitprajapati-bit/TechStore-App',
-  ), Project(
+    'https://github.com/rohitprajapati-bit/Chat-App',
+  ), 
+  Project(
     'ToDos_App',
     'A Flutter-based task management application that allows users to add tasks, view them on a calendar, set due dates, edit tasks, mark them as completed, and delete tasks.',
     // 'assets/images/coffee.png',
-    'https://github.com/rohitprajapati-bit/TechStore-App',
+    'https://github.com/rohitprajapati-bit/ToDos-app',
   ),
   Project(
     'TechStore-App',
