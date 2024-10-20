@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../res/constants.dart';
-import '../../../view model/responsive.dart';
 import 'dart:math' as math;
 
 class AnimatedImageContainer extends StatefulWidget {

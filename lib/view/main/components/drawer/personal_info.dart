@@ -12,7 +12,7 @@ class PersonalInfo extends StatefulWidget {
 }
 
 class _PersonalInfoState extends State<PersonalInfo> {
- void _sendEmail() async {
+  void _sendEmail() async {
     final Uri emailLaunchUri =
         Uri(scheme: 'mailto', path: ' rohitprajapati09190@gmail.com');
     launchUrl(emailLaunchUri);
@@ -40,7 +40,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
           text: '+91 9321462658',
         ),
         InkWell(
-          onTap:  _sendEmail,
+          onTap: _sendEmail,
           child: const AreaInfoText(
               icons: Icon(
                 Icons.email_rounded,

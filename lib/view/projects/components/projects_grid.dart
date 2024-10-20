@@ -16,7 +16,6 @@ class ProjectGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Obx(() {
-      // Ensure that controller.hovers has the same length as projectList
       if (controller.hovers.length != projectList.length) {
         controller.hovers.assignAll(List.filled(projectList.length, false));
       }
@@ -27,7 +26,6 @@ class ProjectGrid extends StatelessWidget {
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: crossAxisCount, childAspectRatio: ratio),
         itemBuilder: (context, index) {
-          // Ensure that the index is within bounds
           if (index < controller.hovers.length) {
             return AnimatedContainer(
                 duration: const Duration(milliseconds: 200),
@@ -53,7 +51,6 @@ class ProjectGrid extends StatelessWidget {
                     ]),
                 child: ProjectStack(index: index));
           } else {
-            // If index is out of range, return an empty container
             return Container();
           }
         },

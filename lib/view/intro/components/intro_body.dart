@@ -63,7 +63,7 @@ class IntroBody extends StatelessWidget {
                 height: defaultPadding * 2,
               ),
               const DownloadButton(),
-              SocialMediaIconColumn()
+              const SocialMediaIconColumn()
             ],
           ),
         ),

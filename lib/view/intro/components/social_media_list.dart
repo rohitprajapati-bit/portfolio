@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_portfolio/view/intro/components/social_media_coloumn.dart';
 import '../../../res/constants.dart';
 
 class SocialMediaIconList extends StatelessWidget {
@@ -17,16 +16,6 @@ class SocialMediaIconList extends StatelessWidget {
           child: Column(
             children: [
               const Spacer(),
-              // RotatedBox(
-              // quarterTurns: -3,
-              // child: Text(
-              //   'Follow Me',
-              //   style: Theme.of(context).textTheme.titleSmall!.copyWith(
-              //         color: Colors.white,
-              //         fontWeight: FontWeight.w500,
-              //       ),
-              // ),
-              // ),
               Container(
                 height: size.height * 0.06,
                 width: 3,
@@ -36,7 +25,6 @@ class SocialMediaIconList extends StatelessWidget {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(defaultPadding)),
               ),
-              // const SocialMediaIconColumn(),
               const Spacer(),
             ],
           ),

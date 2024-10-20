@@ -30,7 +30,7 @@ class AboutPage extends StatelessWidget {
                     ? size.width * 0.12
                     : 30,
                 vertical: 20),
-            child: Responsive(
+            child: const Responsive(
                 desktop: Summery(),
                 extraLargeScreen: Summery(),
                 largeMobile: Summery(),
@@ -64,14 +64,14 @@ class Summery extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 15,
           ),
-          Text(
+          const Text(
             'An enthusiastic Flutter developer with 1 year of experience in crafting high-quality mobile applications for Android and iOS platforms. Proficient in Dart, with a deep understanding of Java, HTML, CSS, and JavaScript, contributing to a versatile skill set. Known for a keen desire to learn and quickly adapt to new technologies, continuously seeking opportunities to enhance technical expertise and deliver innovative solutions.',
             style: TextStyle(color: Colors.grey, height: 1.5),
           ),
-          SizedBox(
+          const SizedBox(
             height: 40,
           ),
           Align(
@@ -86,14 +86,14 @@ class Summery extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 15,
           ),
-          Text(
+          const Text(
             'Bacholer Of Science - (Information Technology), 2024\nMumbai University, Maharashtra',
             style: TextStyle(color: Colors.grey, height: 1.5),
           ),
-          SizedBox(
+          const SizedBox(
             height: 40,
           ),
           Align(
@@ -108,25 +108,25 @@ class Summery extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 15,
           ),
-          Text(
+          const Text(
             'Flutter Developer',
             style: TextStyle(color: Colors.white, height: 1.5, fontSize: 18),
           ),
-          Text(
+          const Text(
             'Infocare Web technology (Jan 2024 - June 2024)',
             style: TextStyle(color: Colors.grey, height: 1.5, fontSize: 12),
           ),
-          SizedBox(
+          const SizedBox(
             height: 8,
           ),
-          Text(
+          const Text(
             'Actively engaged in enhancing the user interface and user experience (UI/UX) of an application. My efforts are concentrated on identifying areas for improvement and implementing modifications to create a more intuitive and user- friendly design. This involves analyzing existing design elements, gathering feedback, and applying best practices to ensure the application meets modern UI/UX standards. Through this process, I am developing my skills in design thinking, attention to detail, and user-centered design, whilecontributing to the overall quality of the application.',
             style: TextStyle(color: Colors.grey, height: 1.5, fontSize: 14),
           ),
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
           Align(
@@ -141,11 +141,11 @@ class Summery extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          MySKills(),
-          Knowledges(),
+          const MySKills(),
+          const Knowledges(),
         ],
       ),
     );

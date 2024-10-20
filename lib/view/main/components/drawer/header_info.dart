@@ -3,7 +3,6 @@ import '../../../../res/constants.dart';
 
 class AreaInfoText extends StatelessWidget {
   const AreaInfoText({super.key, required this.text, required Icon this.icons});
-  // final String title;
   final String text;
   final Icon icons;
   @override
@@ -13,13 +12,13 @@ class AreaInfoText extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Spacer(),
+        const  Spacer(),
           Text(
             text,
-            style: TextStyle(
+            style:const TextStyle(
                 decoration: TextDecoration.underline, color: Colors.grey),
           ),
-          SizedBox(
+         const SizedBox(
             width: 5,
           ),
           icons,

@@ -7,23 +7,32 @@ class Project {
 }
 
 List<Project> projectList = [
-   Project(
+  //Extract Text from Image
+  Project(
+    'Extract Text from Image',
+    'A Flutter app that allows users to extract text from images using Google ML Kit, upload the image to Firebase Storage, and save records in Firestore Cloud. The app also includes a payment page for adding additional details.',
+     // 'assets/images/coffee.png',
+    '',
+  ),
+
+  Project(
     'NCERT Class 12 App',
     'Developed and published a comprehensive mobile application on the Play Store featuring all NCERT Class 12 books.Integrated features such as PDF download, share options, dark mode/light mode support, and an add-to-favorites functionality.',
     // 'assets/images/coffee.png',
     'https://play.google.com/store/apps/details?id=com.avtechky.ncert_12_class',
   ),
-   Project(
+  Project(
     'E-Commerce-Application',
     'A Flutter-based e-commerce application that uses REST API for user authentication, displaying products, product details, and adding items to the cart. The app is designed for selling tech products like laptops and phones, providing a smooth and responsive user experience.',
     // 'assets/images/coffee.png',
     'https://github.com/rohitprajapati-bit/ShopHub-E-Commerce-Application-',
-  ), Project(
+  ),
+  Project(
     'Chat App',
     'A Flutter-based chat application that enables real-time messaging and user authentication using Firebase. This app allows users to chat securely, authenticate using email and password, and store messages in Firebase Firestore.',
     // 'assets/images/coffee.png',
     'https://github.com/rohitprajapati-bit/Chat-App',
-  ), 
+  ),
   Project(
     'ToDos_App',
     'A Flutter-based task management application that allows users to add tasks, view them on a calendar, set due dates, edit tasks, mark them as completed, and delete tasks.',
@@ -72,5 +81,4 @@ List<Project> projectList = [
       'A robust platform for managing travel and tourism services, featuring booking, payment processing, and reporting tools. Ideal for travel agencies seeking efficient solutions..',
       // 'assets/images/chat.png',
       'https://github.com/rohitprajapati-bit/Travel-Tourism-Management-System'),
-
 ];

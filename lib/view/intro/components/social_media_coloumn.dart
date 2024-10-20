@@ -16,7 +16,7 @@ class SocialMediaIconColumn extends StatelessWidget {
               icon: 'assets/icons/linkedin.svg',
               onTap: () => launchUrl(Uri.parse(
                   'https://www.linkedin.com/in/rohit-premnarayan-prajapati/'))),
-          SizedBox(
+          const SizedBox(
             width: 20,
           ),
           SocialMediaIcon(
@@ -24,7 +24,7 @@ class SocialMediaIconColumn extends StatelessWidget {
             onTap: () =>
                 launchUrl(Uri.parse('https://github.com/rohitprajapati-bit')),
           ),
-          SizedBox(
+          const SizedBox(
             width: 20,
           ),
           SocialMediaIcon(
@@ -32,15 +32,15 @@ class SocialMediaIconColumn extends StatelessWidget {
             onTap: () => launchUrl(Uri.parse(
                 'https://www.facebook.com/profile.php?id=100076053197059&mibextid=JRoKGi')),
           ),
-          SizedBox(
+          const SizedBox(
             width: 20,
           ),
           SocialMediaIcon(
             icon: 'assets/icons/twitter.svg',
-            onTap: () =>
-                launchUrl(Uri.parse('https://x.com/Rohit_03_0?t=RuZSQxQak4SL2oB5ycqVHQ&s=09')),
+            onTap: () => launchUrl(Uri.parse(
+                'https://x.com/Rohit_03_0?t=RuZSQxQak4SL2oB5ycqVHQ&s=09')),
           ),
-          SizedBox(
+          const SizedBox(
             width: 20,
           ),
           SocialMediaIcon(
