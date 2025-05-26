@@ -19,7 +19,7 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.19.0'  # ← Apne Flutter version ke according
+          flutter-version: '3.32.0'  # ← Apne Flutter version ke according
 
       - name: Install dependencies
         run: flutter pub get
@@ -28,7 +28,7 @@ jobs:
         run: flutter build web
 
       - name: Deploy preview to Firebase Hosting
-        uses: FirebaseExtended/action-hosting-deploy@v0
+        uses: FirebaseExtended/action-hosting-deploy@v0.9.0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PORTFOLIO_DB7AD }}
