@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
 class AnimatedImageContainer extends StatefulWidget {
-  const AnimatedImageContainer({Key? key, this.height = 300, this.width = 250})
-      : super(key: key);
+  const AnimatedImageContainer({super.key, this.height = 300, this.width = 250});
   final double? width;
   final double? height;
   @override
@@ -37,7 +36,7 @@ class AnimatedImageContainerState extends State<AnimatedImageContainer>
       onEnter: (_) => setState(() => isHovered = true),
       onExit: (_) => setState(() => isHovered = false),
       child: AnimatedContainer(
-        duration: Duration(microseconds: 300),
+        duration: const Duration(microseconds: 300),
         transform: Matrix4.rotationZ(isHovered ? 0 : math.pi / 36),
         child: AnimatedBuilder(
           animation: _controller,

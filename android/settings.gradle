@@ -1,11 +1,31 @@
+pluginManagement {
+    def flutterSdkPath = {
+        def properties = new Properties()
+        file("local.properties").withInputStream { properties.load(it) }
+        def path = properties.getProperty("flutter.sdk")
+        assert path != null, "flutter.sdk not set in local.properties"
+        return path
+    }()
+
+    // Tell Gradle where to find the Flutter tools plugin…
+    includeBuild("$flutterSdkPath/packages/flutter_tools/gradle")
+
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+plugins {
+    // Flutter’s plugin-loader (must be applied)
+    id "dev.flutter.flutter-plugin-loader" version "1.0.0"
+    // Android Gradle Plugin (replace {agpVersion})
+    id "com.android.application"        version "{agpVersion}" apply false
+    // Kotlin Android plugin (replace {kotlinVersion})
+    id "org.jetbrains.kotlin.android"   version "{kotlinVersion}" apply false
+}
+
+rootProject.name = 'portfolio'
 include ':app'
 
-def localPropertiesFile = new File(rootProject.projectDir, "local.properties")
-def properties = new Properties()
-
-assert localPropertiesFile.exists()
-localPropertiesFile.withReader("UTF-8") { reader -> properties.load(reader) }
-
-def flutterSdkPath = properties.getProperty("flutter.sdk")
-assert flutterSdkPath != null, "flutter.sdk not set in local.properties"
-apply from: "$flutterSdkPath/packages/flutter_tools/gradle/app_plugin_loader.gradle"

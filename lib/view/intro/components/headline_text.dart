@@ -5,17 +5,16 @@ class MyPortfolioText extends StatefulWidget {
   final double start;
   final double end;
   @override
-  _MyPortfolioTextState createState() => _MyPortfolioTextState();
+  MyPortfolioTextState createState() => MyPortfolioTextState();
 }
 
-class _MyPortfolioTextState extends State<MyPortfolioText> {
+class MyPortfolioTextState extends State<MyPortfolioText> {
 
   @override
   Widget build(BuildContext context) {
     return const Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        // First Text Animation
         SizedBox(height: 10),
 
         Text(

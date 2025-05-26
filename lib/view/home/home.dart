@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MainView(pages: [
       const Introduction(),
-      AboutPage(),
+      const AboutPage(),
       ProjectsView(),
       Certifications(),
     ]);

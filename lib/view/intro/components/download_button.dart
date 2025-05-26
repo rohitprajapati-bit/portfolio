@@ -40,10 +40,10 @@ class DownloadButton extends StatelessWidget {
                   letterSpacing: 1.2,
                   fontWeight: FontWeight.bold),
             ),
-            SizedBox(
+            const SizedBox(
               width: defaultPadding / 3,
             ),
-            Icon(
+            const Icon(
               FontAwesomeIcons.download,
               color: Colors.white70,
               size: 15,

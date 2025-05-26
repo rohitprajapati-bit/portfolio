@@ -24,10 +24,10 @@ class MenuButton extends StatelessWidget {
                     color: Colors.black,
                     boxShadow: [
                       BoxShadow(
-                          color: Colors.pinkAccent.withOpacity(.5),
+                            color: Colors.pinkAccent.withAlpha((0.5 * 255).toInt()),
                           offset: const Offset(1, 1)),
                       BoxShadow(
-                          color: Colors.blue.withOpacity(.5),
+                            color: Colors.blue.withOpacity(0.5),
                           offset: const Offset(-1, -1)),
                     ]),
                 child:  Center(

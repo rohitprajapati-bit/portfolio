@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../../res/constants.dart';
 
 class AreaInfoText extends StatelessWidget {
-  const AreaInfoText({super.key, required this.text, required Icon this.icons});
+  const AreaInfoText({super.key, required this.text, required this.icons});
   final String text;
   final Icon icons;
   @override
