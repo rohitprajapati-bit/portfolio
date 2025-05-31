@@ -68,7 +68,7 @@ class Summery extends StatelessWidget {
             height: 15,
           ),
           const Text(
-            'An enthusiastic Flutter developer with 1 year of experience in crafting high-quality mobile applications for Android and iOS platforms. Proficient in Dart, with a deep understanding of Java, HTML, CSS, and JavaScript, contributing to a versatile skill set. Known for a keen desire to learn and quickly adapt to new technologies, continuously seeking opportunities to enhance technical expertise and deliver innovative solutions.',
+            "A dedicated Flutter developer with 1 year of hands-on experience in developing cross-platform mobile applications using Flutter and Dart. Proven ability to build clean, efficient, and responsive UIs integrated with Firebase, RESTful APIs, and modern state management techniques like Provider and Bloc. I follow best practices in app architecture (MVVM), ensuring maintainability and performance. Passionate about continuous learning, I bring a problem-solving mindset and a strong eye for UI/UX to every project. Looking to contribute to a forward-thinking team where quality code and user experience matter.",
             style: TextStyle(color: Colors.grey, height: 1.5),
           ),
           const SizedBox(
@@ -112,19 +112,38 @@ class Summery extends StatelessWidget {
             height: 15,
           ),
           const Text(
-            'Flutter Developer',
+            'Experience Flutter Developer',
             style: TextStyle(color: Colors.white, height: 1.5, fontSize: 18),
           ),
           const Text(
-            'Infocare Web technology (Jan 2024 - June 2024)',
+            'KraftNexus TECH LLP (October 2024 – Present)',
             style: TextStyle(color: Colors.grey, height: 1.5, fontSize: 12),
           ),
           const SizedBox(
             height: 8,
           ),
-          const Text(
-            'Actively engaged in enhancing the user interface and user experience (UI/UX) of an application. My efforts are concentrated on identifying areas for improvement and implementing modifications to create a more intuitive and user- friendly design. This involves analyzing existing design elements, gathering feedback, and applying best practices to ensure the application meets modern UI/UX standards. Through this process, I am developing my skills in design thinking, attention to detail, and user-centered design, whilecontributing to the overall quality of the application.',
-            style: TextStyle(color: Colors.grey, height: 1.5, fontSize: 14),
+          const Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "At KraftNexus TECH LLP, I have contributed to the development of multiple Flutter-based mobile applications with a focus on user experience, performance, and functionality.\nOne of my key projects was FitFusion, a fitness membership app where I implemented secure ID/password authentication with client-side validation to protect user data.\nDuring member admission, user details are captured through a form, and a confirmation message — containing a unique barcode — is automatically sent to the member's\nWhatsApp via the backend system. This barcode is then used during check-ins by scanning it at the gym’s entry point. Upon scanning, the app fetches and displays complete \nmember information including active plans, expiry dates, and other membership details, ensuring seamless attendance tracking and management.",
+                style: TextStyle(color: Colors.grey, height: 1.5, fontSize: 14),
+              ),
+              SizedBox(
+                height: 7,
+              ),
+              Text(
+                'I also worked on DuesBuddy, a payment and user management app, where I developed modules to register and search members, assign custom plans, and monitor dues. I built an OCR-based payment proof uploader to extract transaction details from screenshots or receipts, reducing manual input by over 80%. Additionally, I designed user-friendly dashboards to give quick access to payment histories, member profiles, and timely due-date reminders.',
+                style: TextStyle(color: Colors.grey, height: 1.5, fontSize: 14),
+              ),
+              SizedBox(
+                height: 7,
+              ),
+              Text(
+                'Currently, I am developing CrewTrainX, an advanced training management app tailored for airline pilots. The app allows pilots to track and receive reminders about upcoming training renewals and provides the administrative team with a centralized dashboard to view and manage training compliance across the fleet. The focus is on ensuring timely certifications and streamlining communication between pilots and management.',
+                style: TextStyle(color: Colors.grey, height: 1.5, fontSize: 14),
+              )
+            ],
           ),
           const SizedBox(
             height: 50,

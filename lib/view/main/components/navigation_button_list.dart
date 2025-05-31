@@ -1,10 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/view%20model/controller.dart';
+import 'package:flutter_portfolio/view/main/components/navigation_button.dart';
 
-import 'navigation_button.dart';
-
-class NavigationButtonList extends StatelessWidget {
+class NavigationButtonList extends StatefulWidget {
   const NavigationButtonList({super.key});
+
+  @override
+  State<NavigationButtonList> createState() => _NavigationButtonListState();
+}
+
+class _NavigationButtonListState extends State<NavigationButtonList> {
+  int activeIndex = 0;
+
+  void changePage(int index) {
+    setState(() {
+      activeIndex = index;
+    });
+
+    controller.animateToPage(
+      index,
+      duration: const Duration(milliseconds: 500),
+      curve: Curves.easeIn,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return TweenAnimationBuilder(
@@ -15,38 +34,38 @@ class NavigationButtonList extends StatelessWidget {
           scale: value,
           child: Row(
             children: [
-              NavigationTextButton(
-                  onTap: () {
-                    controller.animateToPage(0,
-                        duration: const Duration(milliseconds: 500),
-                        curve: Curves.easeIn);
-                  },
-                  text: 'Home'),
-              NavigationTextButton(
-                  onTap: () {
-                    controller.animateToPage(1,
-                        duration: const Duration(milliseconds: 500),
-                        curve: Curves.easeIn);
-                  },
-                  text: 'About us'),
-              NavigationTextButton(
-                  onTap: () {
-                    controller.animateToPage(2,
-                        duration: const Duration(milliseconds: 500),
-                        curve: Curves.easeIn);
-                  },
-                  text: 'Projects'),
-              NavigationTextButton(
-                  onTap: () {
-                    controller.animateToPage(3,
-                        duration: const Duration(milliseconds: 500),
-                        curve: Curves.easeIn);
-                  },
-                  text: 'Certifications'),
+              buildButton(0, 'Home'),
+              buildButton(1, 'About Us'),
+              buildButton(2, 'Projects'),
+              buildButton(3, 'Certifications'),
             ],
           ),
         );
       },
+    );
+  }
+
+  Widget buildButton(int index, String text) {
+    final isActive = index == activeIndex;
+
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        NavigationTextButton(
+          onTap: () => changePage(index),
+          text: text,
+        ),
+        AnimatedContainer(
+          duration: const Duration(milliseconds: 300),
+          height: 2,
+          width: 30,
+          // margin: const EdgeInsets.only(top: 1),
+          decoration: BoxDecoration(
+            color: isActive ? Colors.white : Colors.transparent,
+            borderRadius: BorderRadius.circular(1),
+          ),
+        )
+      ],
     );
   }
 }
